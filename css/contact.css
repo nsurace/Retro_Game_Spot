@@ -1,0 +1,304 @@
+/* Stylesheet for the contact page*/
+
+body{
+	background-image: url("../images/lights.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+}
+
+button {
+	background-color: lightgray;
+	border-radius: 25px;
+	margin-left: 380px;
+}
+
+#map{
+	display: block;
+	position: absolute;
+	left: 200px;
+	top: 100px;
+}
+
+span{
+	font-size: 1.3rem;
+	display: block;
+	color: white;
+	text-align: center;
+}
+
+span > p{
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+#map a {
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+#map a:hover {
+	color: #66f0ff;
+	text-decoration: none;
+}
+
+/*================= Nav Bar ===============*/
+.navbar-nav {
+	background-image: linear-gradient(black, #343A40);
+	font-family: 'Bangers', cursive;
+	font-size: 1.5rem;
+	margin-left: 0px;
+	transition: 0.3s;
+	width: 100%;
+}
+
+.navbar-nav:hover {
+	color: white;
+}
+
+.navbar li{
+ 	padding-left: 30px;
+}
+
+.navbar{
+ 	padding: 0px;
+ 	margin-bottom: 10px;
+}
+
+#homeLink {
+	margin-right: 680px;
+}
+
+/*================= End Nav Bar ===============*/
+
+/*========= Form Style ==============*/
+.form-sec{
+	display: block;
+	padding-top: 30px;
+	margin-left: 800px;
+	margin-right: 100px;
+	margin-bottom: 0px;
+	border: solid 1px black;
+	box-shadow: 0px 0px 69px 4px rgba(250,10,234,1);
+	border-radius: 10%;
+}
+
+#button {
+	display: block;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform .1s;
+}
+
+#button:hover {
+	transform: scale(1.1)
+}
+
+.form-sec h4 {
+	color: white;
+	font-size: 2.3rem;
+	text-shadow: 1px 1px 2px black, 0 0 25px #ff80e3, 0 0 18px #ff1acd;
+	text-align: center;
+}
+
+.form-group label{
+	padding-left: 5px;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px #ff80e3, 0 0 18px #ff1acd;
+	text-align: center;
+}
+
+
+/*========= End of Form Style ==============*/
+
+
+/*========= Footer Style ==============*/
+.footer-top {
+	background-image: linear-gradient(#343A40, black);
+	margin-top: 10px;
+	padding: 25px;	
+}
+
+.segment-1{
+	text-align: left;
+	color: white;
+}
+
+.segment-2 {
+	color: white;
+}
+
+.segment-2 h3 {
+	padding-left: 40px;
+	color: white;
+}
+
+.segment-3{
+	text-align: center;
+	color: white;
+}
+
+.segment-1 img{
+	transition: transform .2s;	
+}
+
+.segment-1 img:hover{
+	transform: scale(1.2);
+}
+
+.segment-3 img{
+	transition: transform .2s;	
+}
+
+.segment-3 img:hover{
+	transform: scale(1.2);
+}
+
+.segment-4 {
+  text-align: center;
+  color: white;
+}
+
+.segment-4 h5, h6 {
+  text-align: center;
+  color: lightgray;
+}
+
+a{
+	color: lightgray;
+}
+
+/*========= End Footer Style ==============*/
+
+
+/*========== Media Query ========= */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.segment-1{
+		text-align: center;
+	}
+
+	.segment-2 {
+		text-align: center;
+		padding-right: 65px;
+	}  
+
+	#map{
+		display: none;
+	}
+
+	.form-sec{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+
+	/*===========Mobile Nav=========*/
+  ul.navbar-nav{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: -13px;
+  }
+
+  #homeLink{
+    position: relative;
+    top: 7px;
+    margin-bottom: 5px;
+    right: 3px;
+  }
+
+  #eventLink{
+    position: relative;
+    top: -14px;
+    right: 6px;
+  }
+
+  #calLink{
+    position: relative;
+    top: -103px;
+    right: -113px;
+  }
+
+  #partyLink{
+    position: relative;
+    top: -118px;
+    right: -119px;
+  }
+
+  #contactLink{
+    position: relative;
+    top: -207px;
+    right: -245px;
+  }
+
+  #aboutLink{
+    position: relative;
+    top: -222px;
+    right: -238px;
+  }
+}
+
+/* Medium devices (landscape tablets, 901px and down) */
+
+@media (min-width: 601px) and (max-width: 901px)  {
+  li.nav-item{
+    padding-left: 0px;
+  }
+
+  a#homeLink.nav-link{
+    margin: 0px;
+  }
+
+  ul.navbar-nav li{
+    width: 100%;
+  }
+
+  #map{
+	display: none;
+	}
+
+  .form-sec{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+   }
+
+   .footer-top h3{
+    font-size: 1.3rem;
+  }
+
+  .footer-top h5{
+    font-size: 1rem;
+  }
+
+  .footer-top img{
+    height: 45px;
+    width: 45px;
+  }
+  
+  #logo{
+    height: 200px;
+    width: 250px;
+    position: relative;
+    left: -40px;
+  }
+} 
+
+
+/* Google Fonts Quick Reference
+font-family: 'Bangers', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Jim Nightshade', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+*/

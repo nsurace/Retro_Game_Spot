@@ -1,0 +1,308 @@
+/* Stylesheet for the About Us page*/
+
+  /* -=========== Nav Bar ==========*/
+  .navbar-nav {
+    background-image: linear-gradient(black, #343A40);
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    margin-left: 0px;
+    transition: 0.3s;
+    width: 100%;
+  }
+
+  .navbar-nav:hover {
+    color: white;
+  }
+
+  .navbar li{
+    padding-left: 30px;
+  }
+
+  .navbar{
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+
+  #homeLink {
+    margin-right: 680px;
+  }
+  /* -=========== End of Nav Bar ==========*/
+
+  body {
+    background-image: url("../images/lights.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .container-fluid{
+  	width: 100%;
+  }
+
+  #party{
+  	display: block;
+  	padding-top: 20px;
+  	padding-bottom: 10px;
+  	margin-left: auto;
+  	margin-right: auto;
+    width: 100%;
+  }
+
+  h1{
+    color: white;
+    font-family: 'Righteous', cursive;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+    text-align: center;
+  }
+
+  p{
+  	color: white;
+  	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  	text-align: center;
+  }
+
+  span{
+  	display: inline-block;
+  	transition: transform .09s; 
+  	text-decoration: none;
+  }
+
+  span:hover{
+  	cursor: pointer;
+  	transform: scale(1.1);
+  	text-decoration: none;
+  }
+
+  #arcade, #arcade2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #res {
+  	color: white;
+  	text-shadow: 1px 1px black;
+  	text-align: center;
+  	text-decoration: none;
+  }
+
+  /*========= Footer Style ==============*/
+  .footer-top {
+    background-image: linear-gradient(#343A40, black);
+    margin-top: 10px;
+    padding: 25px;  
+  }
+
+  .segment-1 {
+    text-align: left;
+    color: white;
+  }
+
+  .segment-2 {
+    color: white;
+  }
+
+  .segment-2 h3 {
+    padding-left: 40px;
+    color: white;
+  }
+
+  .segment-3 {
+    text-align: center;
+    color: white;
+  }
+
+  .segment-1 img {
+    transition: transform .2s;  
+  }
+
+  .segment-1 img:hover {
+    transform: scale(1.2);
+  }
+
+  .segment-3 img {
+    transition: transform .2s;  
+  }
+
+  .segment-3 img:hover {
+    transform: scale(1.2);
+  }
+
+  .segment-4 {
+    text-align: center;
+    color: white;
+  }
+
+  .segment-4 h5, h6 {
+    text-align: center;
+    color: lightgray;
+  }
+
+  a{
+  	color: lightgray;
+  }
+
+/*========= End Footer Style ==============*/
+
+
+/*========== Media Query ========= */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("../images/lights.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+
+  }
+  .segment-1{
+    text-align: center;
+    }
+
+  .segment-2 {
+    text-align: center;
+    padding-right: 65px;
+    } 
+
+  div.col-sm-7 img{
+    display: none;
+  } 
+
+  h1{
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: .8rem;
+    text-align: center;
+  } 
+
+   div.col-sm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000%; 
+  }
+
+  /*===========Mobile Nav=========*/
+  ul.navbar-nav{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: -13px;
+  }
+
+  #homeLink{
+    position: relative;
+    top: 7px;
+    margin-bottom: 5px;
+    right: 3px;
+  }
+
+  #eventLink{
+    position: relative;
+    top: -14px;
+    right: 6px;
+  }
+
+  #calLink{
+    position: relative;
+    top: -103px;
+    right: -113px;
+  }
+
+  #partyLink{
+    position: relative;
+    top: -118px;
+    right: -119px;
+  }
+
+  #contactLink{
+    position: relative;
+    top: -207px;
+    right: -245px;
+  }
+
+  #aboutLink{
+    position: relative;
+    top: -222px;
+    right: -238px;
+  }
+}
+
+/* Medium devices (landscape tablets, 901px and down) */
+
+@media (min-width: 601px) and (max-width: 901px)  {
+  li.nav-item{
+    padding-left: 0px;
+  }
+
+  a#homeLink.nav-link{
+    margin: 0px;
+  }
+
+  ul.navbar-nav li{
+    width: 100%;
+  }
+
+  div.col-sm-4 h1{
+    position: absolute;
+    right: 220px;
+    width: 100%;
+  }
+
+  div.col-sm-4 p{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 500px;
+    height: 30px;
+  }
+
+  div.col-sm-7 img{
+    filter: brightness(50%);
+  }
+
+  .footer-top h3{
+    font-size: 1.3rem;
+  }
+
+  .footer-top h5{
+    font-size: 1rem;
+  }
+
+  .footer-top img{
+    height: 45px;
+    width: 45px;
+  }
+  
+  #logo{
+    height: 200px;
+    width: 250px;
+    position: relative;
+    left: -40px;
+  }
+
+} 
+
+
+/* Google Fonts Quick Reference
+font-family: 'Bangers', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Jim Nightshade', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+*/
+
+
+
+

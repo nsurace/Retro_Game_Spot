@@ -1,0 +1,458 @@
+/*StyleSheet for the Home Page*/
+
+/*=============Flickering Logo================*/
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+.jumbotron {
+	background-image: url("../images/invaders.jpg");
+	background-position: 50% 40%;
+	background-repeat: no-repeat;
+  padding-bottom: 20px;
+  user-select: none;
+}
+
+:root {
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  margin-right: 590px;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;     
+}
+
+.jumbotron h1::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.jumbotron h1::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+.jumbotron h1:focus {
+  outline: none;
+}
+
+.jumbotron p {
+  padding-left: 40px;
+}
+
+.jumbotron p {
+  font-family: 'Courgette', cursive;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 1.4rem;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+
+/*======== End of Flickering Logo ==========*/
+
+
+/*============= Nav Bar Style ===========*/
+.navbar-nav {
+  background-image: linear-gradient(black, #343A40);
+  width: 100%;
+	font-size: 1.5rem;
+  font-family: 'Bangers', cursive;
+  transition: 0.3s;
+}
+.navbar-nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar li{
+  padding-left: 30px;
+
+}
+
+.navbar{
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+#eventSpace{
+  padding-left: 800px;
+}
+
+/*============= End Nav Bar Style ===========*/
+body {
+  background-image: url("../images/lights.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+}
+
+p, h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+}
+
+h4 {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+div .col-12 {
+  display: block;
+ padding-left: 30px;
+}
+
+#arc1{
+  display: none;
+}
+
+#arc2{
+  display: none;
+}
+
+/*========= Footer Style ==============*/
+.footer-top {
+  background-image: linear-gradient(#343A40, black);
+  margin-top: 10px;
+  padding: 25px;  
+}
+
+.segment-1 {
+  text-align: left;
+  color: white;
+}
+
+.segment-2 {
+  color: white;
+}
+
+.segment-2 h3 {
+  padding-left: 40px;
+  color: white;
+}
+
+.segment-3 {
+  text-align: center;
+  color: white;
+}
+
+.segment-1 img {
+  transition: transform .2s;  
+}
+
+.segment-1 img:hover {
+  transform: scale(1.2);
+}
+
+.segment-3 img {
+  transition: transform .2s;  
+}
+
+.segment-3 img:hover {
+  transform: scale(1.2);
+}
+
+.segment-4 {
+  text-align: center;
+  color: white;
+}
+
+.segment-4 h5, h6 {
+  text-align: center;
+  color: lightgray;
+}
+
+a{
+  color: lightgray;
+}
+#eras{
+  font-family: 'Courgette', cursive;
+}
+/*========= End Footer Style ==============*/
+
+
+/*========== Media Query ========= */
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+  .segment-1{
+    text-align: center;
+    
+  }
+  .segment-2 {
+    text-align: center;
+    padding-right: 65px;
+  } 
+  .jumbotron h1 {
+    min-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  } 
+  .jumbotron p{
+    text-align: center;
+  }
+
+  h1, p{
+    text-align: center;
+  }
+
+  .section img {
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #eventSpace {
+    max-width: 100%;
+    display: none;
+  }
+  .nav-link{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+  }
+  .navbar li{
+    padding-left: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;   
+  }
+
+  h4 {
+    font-size: 1rem; 
+  }
+  div.col-6.col-md-4 img{
+    display: none;
+    text-align: center;
+  }
+
+  div.col-6.col-md-4 {
+    max-width: 0%;
+  }
+
+  .seg-1{
+    display: none;
+  }
+  .seg-2{ 
+    display: none;
+  }
+  .seg-3{
+    display: none;
+  }
+
+  #eras{
+    display: none;
+  }
+
+  .seg-0{
+    display: block;
+    margin-left: 90px;
+  }  
+
+  #img1{
+    height: 200px;
+    width: 500px;
+    position: relative;
+    left: -120px; 
+  }
+
+  ul.navbar-nav{
+    position: relative;
+    font-size: 1.25rem;
+    width: 100%;
+    height: 40px;
+    top: -10px;
+  }
+
+  #eventSpace{
+    display: block;
+    padding: 0px;
+    position: relative;
+    top: 10px;
+    left: 3px;
+  }
+
+  #calSpace{
+    position: relative;
+    left: 58px;
+    top: -20px;
+  }
+
+  #partySpace{
+    position: relative;
+    left: 143px;
+    top: -50px;
+  }
+
+  #contactSpace{
+    position: relative;
+    left: 208px;
+    top: -80px;
+  }
+
+  #aboutSpace{
+    position: relative;
+    left: 283px;
+    top: -110px;
+  }
+}
+ 
+/* Medium devices (landscape tablets, 901px and down) */
+
+@media (min-width: 601px) and (max-width: 901px)  {
+  .seg-0{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .segment-1{
+    text-align: center;
+  }
+
+  .segment-2 {
+    text-align: center;
+  } 
+
+  body{
+    min-width: 100%;
+  }
+
+  .jumbotron h1 {
+    min-width: 100%;
+  }
+
+  .jumbotron p{
+    text-align: center;
+  }
+
+  li#eventSpace.nav-item{
+    padding: 0;
+    margin-left: 100px;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  #welcome{
+    position: relative;
+    left: 220px;
+    margin-bottom: 15px;
+  }
+
+  #img1{
+    width: 80%;
+    height: 250px;
+    filter: brightness(40%);
+    display: none;
+  }
+
+  div.col-6.col-md-7.seg-0{
+    height: 250px;
+  }
+
+  div.col-12.col-md-5 h4{
+    width: 700px;
+    position: relative;
+    z-index: 100;
+  }
+
+  #eras{
+    display: none;
+    height: 50px;
+  }
+
+  div.col-6.col-md-4.seg-2 h2{
+    position: relative;
+    top: -120px;
+  }
+
+  #a7{
+    position: relative;
+    top: -100px;
+    left: -10px;
+  }
+
+  .footer-top h3{
+    font-size: 1.3rem;
+  }
+
+  .footer-top h5{
+    font-size: 1rem;
+  }
+
+  .footer-top img{
+    height: 45px;
+    width: 45px;
+  }
+
+  #logo{
+    height: 200px;
+    width: 250px;
+    position: relative;
+    left: -40px;
+  }
+}
+
+
+
+/* Google Fonts Quick Reference
+font-family: 'Bangers', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Jim Nightshade', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+*/
